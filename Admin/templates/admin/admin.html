@@ -1,0 +1,180 @@
+{% load static%}
+{% block content %}
+<html>
+<head>
+<title>Gym Management</title>
+<link rel="shortcut icon" href=""></head>
+<link href="{%static 'css/All.css'%}" rel="stylesheet" type="text/css" />
+<body>
+<div id="main">
+	<div id="nav">
+		<div id="imgh">
+		<img src="{%static 'photo/logo.png'%}" alt="logo"/>
+		</div>
+		<div id="nav1">
+		<ul>
+			<li><a href="admin.html">Admin</a></li>
+			<li><a href="admin.html" >Admin</a></li>
+			<li><a href="admin.html">Admin</a></li>
+			<li><a href="admin.html"id="current">Admin</a></li>
+			<li><a href="admin.html">Admin</a></li>
+		</ul>
+		</div>
+	</div>
+	<div id="background">
+	<div id="BodyOfAdmin">
+		<a href="admincreate"><button id="adminid">Create Admin</button></a>
+		<a href="index"><button id="adminid">Logout</button></a>
+		<div id="table6">
+			<h2>Employee</h2>
+			<form method="post" action="/EmployeeRegistrations/">
+				{% csrf_token %}
+				<p>
+				<label>First name:</label>
+				<input type="text" name="Frist_name" placeholder="enter your name" class="opt"/>
+				</p>
+				<p>
+				<label>Last Name:</label>
+				<input type="text" name="Last_Name" placeholder="enter your surname"/>
+				</p>
+				<p>
+				<label>Address:</label>
+				<input type="text" name="address" placeholder="enter your address"/>
+				</p>
+				<p>
+				<label>Email:</label>
+				<input type="email" name="email" placeholder="enter your email"/>
+				</p>
+				<p>
+				<label>Contact:</label>
+				<input type="number" name="contact" placeholder="enter your contact number"/>
+				</p>
+				<p>
+				<label>Position:</label>
+				<input type="text" name="position" placeholder="enter position"/>
+				</p>
+				<p id="buttons1">
+				<button id="subm" name='Submit'>Submit</button>
+				<button id="rese">Reset</button>
+				</p>	
+			</form>
+		</div>
+	</div>
+			<div id="employetable">
+		         <fieldset><legend>Employee table</legend> 
+		         <div>
+		         <form>
+		         <div><table><td>Enter User email </td><td></td><td><input type="text" name="searchValue" ></td><td><button type="submit"id="employeesearch" >Search</button></td></table></div>
+		         </form>
+		         </div><br>
+				<div style="overflow-x:auto;">
+		         	<table border="1" style="padding:20px;">
+		         	<tr style="height:50px;width:30px;">
+		         	<!--<thead>-->
+		               <th>Employee Id</th>
+		               <th>First Name</th>
+		               <th>Last Name</th>
+		               <th>Address</th>
+		               <th>Contact</th>
+		               <th>Email</th>
+		               <th>Position</th>
+		               <th>Action</th>
+		              <!--</thead>-->
+		         	</tr>
+		         	{% for employee in employee %}
+
+	         		<tr>
+	         			<tbody>
+	               <td>{{employee.employee_id}}</td>
+	               <td>{{employee.first_name}}</td>
+	               <td>{{employee.last_name}}</td>
+	               <td>{{employee.address}}</td>
+	               <td>{{employee.contact}}</td>
+	               <td>{{employee.email}}</td>
+	               <td>{{employee.position}}</td>
+	               <td><a href="/edit/{{employee.employee_id}}">Edit</a> &nbsp;| <a href="/delete/{{employee.employee_id}}">Delete</a></td>
+	         		</tbody>
+	         		</tr>
+	         		{%endfor%}
+	         		 </table>
+        			 </div>
+        			 </fieldset> 
+				</div>
+			
+			<div id="Customer">
+		          <fieldset><legend>Customers Details</legend> 
+		          <div>
+		          <form>
+		          <div>
+		          <table><td>Enter  email </td><td></td><td><input type="text"  name="searchValue"></td><td><input type="submit" id="Customersearch" value="Search"></td></table>
+		          </div>
+		          </form>
+		          </div>
+		          <table border="1" style="padding:20px;">
+		          <tr style="height:50px;width:30px;">
+		               <th>Customer Id</th>
+		               <th>First Name</th>
+		               <th>Last Name</th>
+		               <th>Address</th>
+		               <th>Email</th>
+		               <th>Service</th>
+		               
+		            </tr>
+		         	{%for customer in customer%}
+
+		         	<tr>
+		           
+		               <td>{{customer.Customer_id}}</td>
+		               <td>{{customer.first_name}}</td>
+		               <td>{{customer.last_name}}</td>
+		               <td>{{customer.address}}</td>
+		               <td>{{customer.email}}</td>
+		               <td>{{customer.service}}</td>
+		               </tr>
+		         {%endfor%}
+		          </table>
+		          </fieldset> 
+          </div>
+          <div id="AdminTable">
+		          <fieldset><legend>Admin </legend>
+		           <div>
+		          <form>
+		          <div>
+		          <table><td>Enter  email </td><td></td><td><input type="text" name="searchValue"></td><td><input type="submit"  value="Search"></td></table>
+		          </div>
+		          </form>
+		          </div> 
+		          <table border="1" style="padding:20px;">
+		          <tr style="height:50px;width:30px;">
+		          		<th>Admin ID</th>
+		               <th>Admin email</th>
+		               <th>Admin password</th>               
+		            </tr>
+
+		         	{% for admin in admin %}
+
+		         	<tr>
+
+		           		<td>{{admin.admin_id}}</td>
+		                <td>{{admin.email}}</td>
+		                <td>{{admin.password}}</td>
+		                
+		            </tr>
+		         {%endfor%}
+		          </table>
+		          </fieldset> 
+          </div>
+       	</body>
+	<div id="Pagination">
+	<form method="post" action="/admin1">
+	{% csrf_token %}
+	<button type="submit" id="pervious" name="prev" value="prev">Privous</button>
+	<input class="form" type="number" id="page" name="page" value="{{page}}" min="1" style="width:40px;"/>
+	<button type="submit" id="next" name="next" value="next">Next</button>
+	</form>
+</div>
+</div>
+<script src="{% static 'javascript/jquery.min.js' %}"></script>
+<script src="{%static 'javascript/jquery.js' %}"></script>
+{% endblock content %}
+</html>

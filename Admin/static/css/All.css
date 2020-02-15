@@ -1,0 +1,1041 @@
+body{
+overflow-x: hidden;
+}
+{
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+#main1
+{
+	height:1680px;
+	width:1519px;
+}
+#main2
+{
+	height:1720px;
+	width:1519px;
+}
+#nav
+{
+	float:none;
+	width:1519px;
+	height:102px;
+	background:black;
+}
+#imgh
+{
+	float:left;
+	width:150px;
+	margin-left:10px;
+}
+#imgh img
+{
+	width:150px;
+	height:95px;
+	margin-right:220px;
+}
+#nav1
+{
+	float:left;
+	height:0px;
+	width:950px;
+	margin-left:50px;
+	margin-top:35px;
+}
+#nav1 ul
+{
+	list-style:none;
+}
+#nav1 ul li
+{
+	float:left;
+}
+#nav1 ul li a
+{
+	color:white;
+	text-decoration:none;
+	padding:5px 25px;
+	font-weight:bold;
+	text-align:center;
+	font-size:23px;	
+	border-radius:5px;
+}
+#nav1 ul li a:hover
+{
+	background:white;
+	color:black;
+	border-radius:5px;
+}
+#current
+{
+	color:white;
+	background:green;
+	border-radius:5px;
+}
+#logform
+{
+	float:right;
+	width:430px;
+	margin-left:850px;
+	
+}
+/*#logform input[type='password']
+{
+	width:140px;
+	height:20px;
+}
+*/#idforlogin{
+	float:right;
+	width:430px;
+	height:30px;
+	margin-top:-20px;
+	
+}
+
+#btn_login
+{
+	background-color:green;
+	border-radius:4px;
+    height:20px;
+	width:60px;
+	border:none;
+}
+#body
+{
+	float:left;
+	height:800px;
+	width:1519px;
+}
+.slideshow-container {
+  margin-top: 70px;
+  width: 1519px;
+  height:800px;
+}
+
+.mySlides {
+	width:1519px;
+	height:800px;
+}
+.mySlides img{
+	width:1519px;
+	height:800px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  /*margin-top: -22px;*/
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#mid
+{
+	float:left;
+	height:200px;
+	width:1519px;
+	background-color:black;
+}
+#h1_packages
+{
+	float:left;
+	height:100px;
+	width:400px;
+	margin-left:100px;
+}
+#dev_services
+{
+	float:left;
+	height:100px;
+	width:500px;	
+	margin-left:30px;
+}
+#mid h1
+{
+	color:green;
+	margin-left:90px;
+	font-size:30px;
+	margin-top:0px;
+}
+#mid h2
+{
+	font-size:30px;
+	float:none;
+	color:green;
+	margin-left:30px;
+	
+}
+
+#btn_details
+{
+	border-radius:4px;
+	font:40px;
+	margin-left:115px;
+	margin-top:3px;
+	border:none;
+	height:20px;
+	width:60px;
+}
+#btn_details:hover
+{
+	background-color:green;
+	border-radius:4px;
+}
+#paragraphforservices
+{
+	color:white;
+	margin-top:10px;
+}
+#buttonfordetails
+{
+	border-radius:4px;
+	font:40px;
+	margin-left:50px;
+	margin-top:3px;
+	border-width:5px;
+	border:none;
+	height:20px;
+	width:60px;
+	display: inline-block;
+}
+#buttonfordetails:hover
+{
+	background-color:green;
+	border-radius:4px;
+	
+}
+#email
+{
+	float:left;
+	height:100px;
+	width:150px;
+}
+#emailtext
+{
+	color:white;
+	margin-top:150px;
+	margin-left:200px;
+}
+#footer
+{
+	float:left;
+	height:421px;
+	width:1519px;
+	background-color:black;
+}
+#information
+{ 
+	float:left;
+	height:100px;
+	width:280px;
+	margin-left:100px;
+}
+#information h3
+{
+	color:green;
+	font-size:30px;
+
+}
+#paragrapforinformation
+{
+	color:white;
+	font-size:18px;
+	text-align:left-side;
+}
+#follow
+{
+	float:left;
+	width:400px;
+	padding-left:200px;
+}
+#follow h4
+{
+	color:green;
+	font-size:30px;
+}
+#insta
+{
+	float:left;
+	height:60px;
+	width:68px;
+}
+#insta img
+{
+	height:50px;
+	width:55px;
+	margin-top:10px;
+	border-radius:10px;
+}
+#facebook
+{
+	float:bottom;
+	height:60px;
+	width:68px;
+	margin-top:80px;
+	margin-right:60px;
+	
+}
+#facebook img
+{
+	height:50px;
+	width:55px;
+	border-radius:50px;
+	
+}
+#twitter
+{
+	float:left;
+	height:50px;
+	width:55px;
+	margin-top:10px;
+}
+#twitter img
+{
+	height:50px;
+	width:55px;
+	border-radius:55px;
+}
+
+#contact
+{
+	float:left;
+	height:350px;
+	width:515px;
+}
+#mannager
+{
+	float:left;
+	height:150px;
+	width:515px;
+}
+#mannager h5
+{
+	color:green;
+	font-size:25px;
+	text-align:center;
+}
+#mannager img
+{
+	height:90px;
+	width:100px;
+	border-radius:15px;
+	margin-left:20px;
+}
+#paragraphformannager
+{
+	float:right;
+	height:150px;
+	width:300px;
+	color:white;
+	margin-right:50px;
+	font-size:20px;
+	margin-top:10px;
+}
+#vice_mannager
+{
+	float:left;
+	height:150px;
+	width:515px;
+}
+#vice_mannager img
+{
+	height:90px;
+	width:100px;
+	border-radius:15px;
+	margin-left:20px;
+}
+#paragraphfortrainer
+{
+	float:right;
+	height:150px;
+	width:300px;
+	color:white;
+	margin-right:50px;
+	font-size:20px;
+	margin-top:10px;
+}
+#vice_mannager h6
+{
+	color:green;
+	font-size:25px;
+	text-align:center;
+}
+#location
+{
+	float:left;
+	height:50px;
+	width:1519px;
+	
+}
+#location p
+{
+	color:white;
+	font-size:20px;
+	margin-left:70px;
+}
+
+#strength
+{
+	float:left;
+	width:1519px;
+	height:190px;
+	margin-top:20px;
+}
+#pgh 
+{
+	float:left;
+	height:190px;
+	width:1170px;
+}
+#imageback
+{
+	float:left;
+	height:190px;
+	width:1170px;
+	background-image:url(../photo/bc.jpg);
+	border-radius:4px;
+}
+
+#pgh h1
+{
+	font-size:25px;
+	color:black;
+}
+#pgh p
+{
+	font-size:19px;
+}
+#stnthimg
+{
+	float:right;
+	height:190px;
+	width:349px;
+	border-radius:15px;
+}
+#stnthimg img
+{
+	height:190px;
+	width:349px;
+	border:2px;
+	border-radius:4px;
+}
+#arobic
+{
+	float:right;
+	width:1519px;
+	height:190px;
+	margin-top:20px;
+}
+#pgh2
+{
+	float:right;
+	height:190px;
+	width:1170px;
+}
+#pgh2 h2
+{
+	font-size:25px;
+	color:black;	
+}
+#pgh2 p
+{
+	font-size:19px;
+}
+#imagebackground
+{
+	float:left;
+	height:190px;
+	width:1170px;
+	background-image:url(../photo/bc.jpg);
+	border-radius:4px;
+}
+#arobicimg
+{
+	float:left;
+	height:190px;
+	width:349px;
+}
+#arobicimg img
+{
+	height:190px;
+	width:349px;
+	border:2px;
+	border-radius:4px;
+}
+#cardio
+{
+	float:right;
+	width:1519px;
+	height:190px;
+	margin-top:20px;
+}
+
+#pgh3 
+{
+	float:left;
+	height:190px;
+	width:1170px;
+}
+#pgh3 h2
+{
+	font-size:25px;
+	color:black;	
+}
+#pgh3 p
+{
+	font-size:19px;
+}
+#backgroundimg
+{
+	float:left;
+	height:190px;
+	width:1170px;
+	background-image:url(../photo/bc.jpg);
+	border-radius:4px;
+}
+#cardioimg
+{
+	float:right;
+	height:190px;
+	width:349px;
+	
+}
+#cardio img
+{
+	height:190px;
+	width:349px;
+	border:2px;
+	border-radius:4px;
+}
+#zumba
+{
+	float:right;
+	width:1519px;
+	height:190px;
+	margin-top:20px;
+}
+#zubmaimg img
+{
+	float:left;
+	height:190px;
+	width:349px;
+	border-radius:4px;
+}
+#pgh4
+{
+	float:right;
+	height:190px;
+	width:1170px;
+}
+#pgh4 h4
+{
+	font-size:25px;
+	color:black;	
+}
+#pgh4 p
+{
+	font-size:19px;
+}
+#imagebak
+{
+	float:left;
+	height:190px;
+	width:1170px;
+	background-image:url(../photo/bc.jpg);
+	border-radius:4px;
+}
+#VideoSection
+{
+	float:left;
+	height:320px;
+	width:1519px;
+	background:rgba(65,75,85,0.90);
+}
+#footer1
+{
+	float:left;
+	height:421px;
+	width:1519px;
+	background-color:black;
+}
+#video1
+{
+	float:left;
+	width:440px;
+	height:310;
+	margin-left:20px;
+	margin-top:8px;
+}
+#video2
+{
+	float:left;
+	width:400px;
+	height:310;
+	margin-left:60px;
+	margin-top:8px;
+	border-radius:5px;
+}
+#video3
+{
+	float:right;
+	width:400px;
+	height:310;
+	margin-right:80px;
+	margin-top:8px;
+	border-radius:5px;
+}
+#bodypart
+{
+	margin-top: 100px;
+	float:left;
+	width:1519;
+	height:1200px;
+}
+#bodypart h1
+{
+	font-size:20px;
+}
+
+#note
+{
+	float:left;
+	width:800px;
+	height:140px;
+	margin-left:150px;
+	margin-top:20px;
+}
+#note ul li
+{
+	font-size:20px;
+
+}
+#btn_book
+{
+	height:23px;
+	width:30px;
+	float:right;
+	margin-top:50px;
+	margin-right:500px;
+	border-radius:6px;
+}
+
+#btnbook
+{
+	height:35px;
+	width:70px;
+	font-size:25px;
+	border-radius:6px;
+	background:red;
+	border:none;
+}
+#btnbook:hover
+{
+	color:white;
+	background:black;
+}
+#body2
+{
+	float:left;
+	height:800px;
+	width:1519px;
+	background-image:url(../photo/gymbc.jpg);
+}
+#main3
+{
+	float:left;
+	height:1300px;
+	width:1519px;
+}
+#Signup
+{	
+	height:500px;
+	width:700px;
+	background-color:rgba(75,75,85,0.90);
+	float:left;	
+	margin-left:200px;
+	margin-top:100px;
+	border-radius:15px;
+	font-size:20px;
+	padding:0 50px;
+}
+#Signup form label
+ {
+	 width:200px;
+	 float:left;
+	border-radius:4px;
+	margin-top:25px;
+	margin-left:40px;
+	
+ }
+
+#Signup form label.opt
+{
+	 width:200px;
+	 float:none;
+}
+#Services
+{
+	float:left;
+	width:200px;
+	height:25px;
+	margin-top:23px;
+}
+#buttons
+{
+	float:bottom;
+	height:100px;
+	width:300px;
+	margin-top:50px;
+}
+#sub
+{
+	float:bottom;
+	height:24px;
+	width:90px;
+	margin-left:50px;
+	margin-top:50px;
+	border:none;
+	border-radius:5px;
+}
+#res
+{
+	float:bottom;
+	height:24px;
+	width:90px;
+	margin-left:40px;
+	border:none;
+	border-radius:5px;
+}
+#sub:hover
+{
+	
+	background:red;
+}
+#res:hover
+{
+
+	background:red;
+}
+#BodyOfAdmin
+{
+
+	float:left;
+	width:1519px;
+	height:auto;
+	
+}
+
+ 
+
+
+ #buttons1
+{
+	float:bottom;
+	height:50px;
+	width:350px;
+}
+#subm
+{
+	height:25px;
+	width:100px;
+	margin-left:60px;
+	border:none;
+	border-radius:5px;
+	margin-top: 20px;
+}
+#rese
+{
+	float:bottom;
+	height:25px;
+	width:100px;
+	margin-left:40px;
+	border:none;
+	border-radius:5px;
+}
+#subm:hover
+{
+	
+	background:red;
+}
+#rese:hover
+{
+
+	background:red;
+}
+#employetable
+{
+	height:auto;
+	width:1300px;
+	margin-left: 50px;
+	margin-top:10%;
+	float:left;
+	background:rgba(75,75,85,0.80); 
+}
+#Customer
+{
+	height:auto;
+	width:1300px;
+	margin-left: 50px;
+	margin-top:60px;
+	float:left;
+	background:rgba(75,75,85,0.80); 
+}
+#AdminTable
+{
+	height:auto;
+	margin-top:60px;
+	float:left;
+	width:1300px;
+	margin-left: 50px;
+background:rgba(75,75,85,0.80); 
+}
+@media screen and (max-width: 1375px){
+	#nav{
+		width:100%;
+		height:auto;
+		background: black;
+	}
+	#nav ul{
+	    margin: 0;
+	  	padding: 0;
+	  	overflow: hidden;
+ 	} 
+
+}
+@media screen and (max-width:900px) {
+	#main{
+		width:100%;
+		height:auto;
+	}
+  #nav{
+    background: black;
+    width:100%;
+    height:auto;
+  }
+   #nav ul{
+    margin-left: 0px; 
+  } 
+  #nav li {
+		  float: left;
+		  width:100%;
+		  height:auto;
+		  text-align: left;
+		}
+
+	#nav li a {
+		  display: block;
+		  margin-left: 0px;
+		  padding-left:0px;
+		  font-weight: bold;
+		  color:black;
+		}
+	#body
+	{
+		width:100%;
+		height:auto;
+		margin-top: 200px;
+	}
+	.slideshow-container{
+		width:100%;
+		height:auto;
+		margin-top: 200px;
+	}
+	.slideshow-container img{
+		width:100%;
+		height:auto;
+		margin-top: 200px;
+	}
+}
+#pagination
+{
+	float:left;
+	height:200px !important;
+	width:350px !important;
+	margin-top:40px;
+	margin-left: 100px;
+}
+#pervious
+{
+	float:left;
+	height:30px;
+	width:90px;
+	border-radius:5px;
+	border:none;
+	color:black;
+	background:white;
+	margin-left:20px;
+}
+#next
+{
+	float:right;
+	height:30px;
+	width:90px;
+	margin-left:40px;
+	border-radius:5px;
+	border:none;
+	color:black;
+	background:white;
+}
+#pervious:hover
+{
+	color:white;
+	background:green;
+}
+#next:hover
+{
+	color:white;
+	background:green;
+}
+#page 
+{
+	margin-top:1px !important;
+	margin-left:30px !important;
+}
+
+#table6
+{	
+
+	height:580px;
+	width:600px;
+	background-color:rgba(75,75,85,0.90);
+	float:left;	
+	margin-left:200px;
+	margin-top:10px;
+	border-radius:15px;
+	font-size:20px;
+	padding:0 50px;
+	font-family:Century Gothic
+}
+#table6 form label
+ {
+	width:200px;
+	float:left;
+	border-radius:4px;
+	margin-top:25px;
+	margin-left:40px;
+ }
+ #table6 input[type="text"], input[type="email"], input[type="number"],input[type='dob']
+ {
+	 height:25px;
+	 width:200px;
+	 border-radius:3px;
+	 margin-top:25px;
+	 float:none;
+ }
+ #aboutf
+ {
+ 	float:left;
+ 	background-color: rgba(75,75,85,0.80);
+ 	width:70%;
+ 	height:auto;
+ 	margin-top: 100px;
+ 	margin-left: 200px;
+ 	margin-bottom: 100px;
+ 	border-radius: 5px;
+ }
+ #adminid
+ {
+ 	border:none;
+ 	border-radius: 3px;
+ 	height: 40px;
+ 	margin-top: 30px;
+ 	margin-left: 30px;
+ 	color: green;
+ 	background: white;
+ }
+ #adminid:hover
+ {
+ 	background: red;
+ 	color:black;
+ }
+.form-control {
+    display: block;
+    width: auto;
+    height: 30px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-top: 23;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#background
+{
+	float:left;
+	height: 1800px;
+	width: :1519px;
+	background-image: url(../photo/img.jpg)
+}

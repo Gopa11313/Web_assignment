@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+{% block content %}
+{% load static %}
+<div class="container-fluid">
+	<div class="row">
+       <a href="index" ><button class="btn btn-danger">Back</button></a>
+<div id="adminlogin" class="col-md-3 col-xs-12">
+    <form method="post" id="logform" action="/adminentry">
+        {% csrf_token %}
+        <div class="form-group">
+        <input type="email" placeholder="email" name="email"/>
+    </div>
+    <div class="form-group">
+        <input type="password" placeholder="password" name="password"/>
+        <div class="form-group">
+        	<div class="form-group">
+        <button type="submit" class="btn btn-danger">Log In</button>
+    </div>
+    </form>
+    {% for message in meesages%}
+    {{message}}
+    {% endfor%}
+</div>
+</div>
+</div>
+{% endblock content %}

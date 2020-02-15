@@ -1,0 +1,27 @@
+{% load static%}
+<html>
+<head>
+<title>Gym Management</title>
+<link href="{%static 'css/All.css'%}" rel="stylesheet" type="text/css" />
+<body>
+
+<form method="post" action="/admincreate">
+{% csrf_token %}
+				<p>
+			
+				<label>Email:</label>
+				<input type="email" name="email" placeholder="enter your email"/>
+				</p>
+				<p>
+				<label>Password:</label>
+				<input type="password" name="password" placeholder="enter your password"/>
+				</p>
+			
+				<p id="buttons1">
+				<button type="Submit">Submit</button>
+				<button id="rese">Reset</button>
+				</p>	
+			</form>
+			<a href="admin1"><button id="adminid">Back</button></a>
+</body>
+</html>
